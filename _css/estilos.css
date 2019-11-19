@@ -1,0 +1,342 @@
+/*
+GERAL
+*/
+
+body {
+    font-family: sans-serif;
+    color: #4d4d4d;
+}
+
+h1, h2, h3{
+    margin: 0;
+    font-family:  sans-serif;
+    font-weight: 700;
+}
+
+.botao {
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #FF69B4;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+/*
+NAVEGAÇÃO
+*/
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FF69B4;
+    margin-top: -10px;
+	margin-left: -10px;
+	margin-right: -10px;
+    
+    
+}
+
+nav > a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 200;
+    font-size: 40px;
+    font-family: sans-serif;
+	padding-left: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width:  100%;
+    text-decoration: none;
+    color: #f1f1f1;
+	font-size: 20px;
+}
+
+/*
+CABEÇALHO
+*/
+
+header {
+    background-image: url("../_imagens/fundo.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    /*padding:  4em;*/
+	
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+
+header h1 {
+    font-family:sans-serif;
+    font-size: 60px;
+    font-weight: 500;    
+}
+
+header p {
+    margin-bottom: 2em;
+}
+
+#banner div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;   
+}
+
+#banner div img {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: none;
+}
+
+/* 
+SOBRE
+*/
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px 20px;
+    background-color: #FF69B4;
+    color: #f1f1f1;
+    margin-bottom: 1.5em;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+#sobre h2{
+    margin-top: 1em;
+}
+
+#sobre p {
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+    /*margin-bottom: 1.0em;   */
+    max-width: 1000px;
+    text-align: justify;
+}
+
+#sobre .botao {
+    background-color: #f1f1f1;
+    color: #FF69B4;  
+    /*margin-bottom: 1.0em;*/
+}
+
+/*
+DELICIAS
+*/
+
+#delicias {   
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #fe4365;*/
+	
+}
+
+#delicias div{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;    
+}
+
+#delicias div img {
+    /*background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 600px;    
+    width: auto;
+    */
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: none;
+}
+
+
+/* 
+CONTATO
+*/
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/*
+MEDIA QUERIES
+*/
+
+@media screen and (min-width: 768px) {
+    /*
+    NAVEGAÇÃO
+    */
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+
+    /*
+    CABEÇALHO
+    */
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+    
+    header h1 {        
+        font-size: 70px;
+        
+    }
+    
+    #banner div img {
+        width: 200px;
+        margin: auto;
+        text-align: center;
+        padding: none;
+    }    
+
+    /*
+    SOBRE
+    */
+	
+	#sobre h2{
+    	margin-top: 0px;
+	}
+
+	#sobre p {		
+		font-weight:100;	
+        font-size: 30px;
+	}
+    
+    #sobre {
+        height: 250px;
+        height: 30vh;
+        justify-content: justify;
+        min-height: 400px;
+        text-align: justify;
+        padding: 30px 10px 200px;        
+    }
+
+    /*
+    DELICIAS
+    */
+    #delicias {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #delicias h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #delicias div {
+        flex-grow: 1;
+        flex-basis: 250px;
+        padding: 0 10px;
+    }
+
+   
+
+    /*
+    CONTATO
+    */
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    #contato p {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #banner div img {
+        width: 270px;
+    }
+    
+    #sobre {
+        min-height: 300px;    
+    }
+
+@media screen and (min-width: 1400px){
+    /*
+    CABEÇALHO
+    */    
+    header h1 {        
+        font-size: 80px;        
+    }
+    
+    #banner div img {
+        width: auto;    
+    }        
+
+    /*
+    SOBRE
+    */
+    #sobre {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 150px;
+        text-align: justify;
+        padding: 130px 20px 130px;        
+    }
+    
+    #sobre p {		
+		font-weight: 100;
+        font-size: 32px;
+	}
+}
